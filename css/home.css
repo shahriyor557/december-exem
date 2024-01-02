@@ -95,9 +95,6 @@ main .main_first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 650px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 main .main_first .main_first_left {
@@ -143,6 +140,13 @@ main .main_first .main_first_left .strelka b {
   letter-spacing: 2px;
 }
 
+main .main_first .main_first_right {
+  max-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 main .main_first .main_first_right img {
   width: 830px;
   height: 650px;
@@ -153,25 +157,21 @@ main .main_second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 600px;
 }
 
-main .main_second .main_first_left {
+main .main_second .main_second_left {
   background: #FFF;
   max-width: 387px;
   width: 100%;
   padding: 136px 111px;
 }
 
-main .main_second .main_first_left h1 {
+main .main_second .main_second_left h1 {
   color: #000;
   font-size: 40px;
   font-weight: 700;
@@ -180,7 +180,7 @@ main .main_second .main_first_left h1 {
   text-transform: uppercase;
 }
 
-main .main_second .main_first_left p {
+main .main_second .main_second_left p {
   color: #000;
   font-style: normal;
   font-weight: 400;
@@ -188,7 +188,7 @@ main .main_second .main_first_left p {
   padding-top: 21px;
 }
 
-main .main_second .main_first_left .strelka {
+main .main_second .main_second_left .strelka {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,18 +200,23 @@ main .main_second .main_first_left .strelka {
   cursor: pointer;
 }
 
-main .main_second .main_first_left .strelka b {
+main .main_second .main_second_left .strelka b {
   color: #000;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
-main .main_second .main_first_right img {
-  width: 830px;
-  height: 600px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+main .main_second .main_second_right {
+  max-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main_second .main_second_right img {
+  max-width: 830px;
+  max-height: 601px;
 }
 
 main .main_three {
@@ -219,13 +224,6 @@ main .main_three {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 598px;
 }
 
 main .main_three .main_first_left {
@@ -271,11 +269,16 @@ main .main_three .main_first_left .strelka b {
   letter-spacing: 2px;
 }
 
+main .main_three .main_first_right {
+  max-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 main .main_three .main_first_right img {
   width: 830px;
   height: 600px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 main .main_four {
