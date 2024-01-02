@@ -4,6 +4,21 @@
       font-family: "DM Sans";
   }
 
+  body::-webkit-scrollbar {
+      width: 6px;
+  }
+
+  body::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  body::-webkit-scrollbar-thumb {
+      background-color: rgb(98, 233, 15);
+      border-radius: 100px;
+      background: linear-gradient(27deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
+  }
+
+
 
   header {
       max-width: 1440px;
@@ -61,6 +76,7 @@
               line-height: normal;
               letter-spacing: 2px;
               transition: 0.5s;
+              cursor: pointer;
 
               &:hover {
                   color: #000;
@@ -77,6 +93,7 @@
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
+
       .main_first {
           width: 100%;
           display: flex;
@@ -360,46 +377,50 @@
                   display: flex;
                   gap: 15px;
 
-                  svg:hover {
-                      fill: black
+                  svg:hover path {
+                      fill: linear-gradient(45deg, #D3205A 0%, #FF5A5A 100%);
+                      cursor: pointer;
+                      //   background-color: #5A77FF;
+                      fill: #5A77FF;
                   }
-              }
-          }
-
-          .footer_right {
-              display: flex;
-              flex-direction: column;
 
 
-              .strelka {
-                  display: flex;
-                  align-items: center;
-                  gap: 18px;
-                  justify-content: end;
-
-
-                  b {
-                      color: #FFF;
-                      text-align: right;
-                      font-size: 12px;
-                      font-weight: 700;
-                      letter-spacing: 2px;
-
-                      &:hover {
-                          text-decoration-line: underline;
-                      }
-
-                  }
-              }
-
-              p {
-                  padding-top: 102px;
-                  color: #FFF;
-                  text-align: right;
-                  font-size: 15px;
-                  font-weight: 400;
               }
           }
       }
 
+      .footer_right {
+          display: flex;
+          flex-direction: column;
+
+
+          .strelka {
+              display: flex;
+              align-items: center;
+              gap: 18px;
+              justify-content: end;
+
+
+              b {
+                  color: #FFF;
+                  text-align: right;
+                  font-size: 12px;
+                  font-weight: 700;
+                  letter-spacing: 2px;
+
+                  &:hover {
+                      text-decoration-line: underline;
+                  }
+
+              }
+          }
+
+          p {
+              padding-top: 102px;
+              color: #FFF;
+              text-align: right;
+              font-size: 15px;
+              font-weight: 400;
+          }
+      }
   }
