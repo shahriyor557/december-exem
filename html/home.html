@@ -46,8 +46,22 @@
             <div class="k"></div>
 
         </div>
+        <div class="gamb_click">
+            <ul>
+                <li><a href="./Stories.html">STORIES</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+
+            </ul>
+            <div class="header_button_click">
+                <button>GET AN INVITE</button>
+            </div>
+
+        </div>
 
     </header>
+
+
     <main>
         <div class="main_first">
             <div class="main_first_left">
@@ -280,5 +294,21 @@
     </footer>
 
 </body>
+<script>
+    let gamburger = document.querySelector('.gamb')
+    let menu = document.querySelector('.gamb_click')
+    let count = 0
+    console.log(menu)
+    gamburger.addEventListener('click', () => {
+        if (count % 2 == 0) {
+            menu.style.display = 'flex'
+        } else {
+            menu.style.display = "none"
+        }
+        count++
+    })
+
+
+</script>
 
 </html>
