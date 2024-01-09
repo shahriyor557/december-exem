@@ -333,7 +333,9 @@ main {
         .strelka {
             display: flex;
             align-items: center;
-            gap: 9px;
+            gap: 12px;
+            cursor: pointer;
+
 
             b {
                 color: #FFF;
@@ -341,6 +343,12 @@ main {
                 font-size: 12px;
                 font-weight: 700;
                 letter-spacing: 2px;
+
+                &:hover {
+                    text-decoration-line: underline;
+                    transition: 0.5s;
+
+                }
 
 
             }

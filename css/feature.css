@@ -393,7 +393,8 @@ main .main_six .strelka {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 9px;
+  gap: 12px;
+  cursor: pointer;
 }
 
 main .main_six .strelka b {
@@ -402,6 +403,13 @@ main .main_six .strelka b {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+main .main_six .strelka b:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer {
